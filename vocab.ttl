@@ -1,83 +1,49 @@
-@ig dcterms: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
-@prefix fup8: <https://jardindesconnaissances.univ-paris8.fr/onto/fup8#> .
+@prefix gi: <https://jardindesconnaissances.univ-paris8.fr/onto/fup8#> .
 @prefix teach: <http://linkedscience.org/teach/ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix schema: <http://schema.org/>.
 
-<https://jardindesconnaissances.univ-paris8.fr/onto/ig> a owl:Ontology ;
-    dcterms:title "Formation Université Paris 8" .
+<https://jardindesconnaissances.univ-paris8.fr/onto/gi> a owl:Ontology ;
+    dcterms:title "Governance de l'Internet" .
 
-fup8:Departement a rdfs:Class ;
-    rdfs:label "Département" ;
+gi:Net Neutrality a rdfs:Class ;
+    rdfs:label "Net Neutrality" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-fup8:University a rdfs:Class ;
-    rdfs:label "Université" ;
+gi:ProtectionDesDonnees a rdfs:Class ;
+    rdfs:label "Protection des données" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-fup8:UFR a rdfs:Class ;
-    rdfs:label "Unité de Formation et de Recherche" ;
+gi:DomainNameSystem a rdfs:Class ;
+    rdfs:label "Domain Name System" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-fup8:Mention a rdfs:Class ;
-    rdfs:label "Mention" ;
+gi:ICANN a rdfs:Class ;
+    rdfs:label "Internet Corporation for Assigned Names and Numbers (ICANN)" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-fup8:SalleCours a rdfs:Class ;
-    rdfs:label "Salle de cours" ;
+gi:Cybersecurite a rdfs:Class ;
+    rdfs:label "cybersécurité" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .    
 
-fup8:Parcours a rdfs:Class ;
-    rdfs:label "Parcours" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-fup8:UE a rdfs:Class ;
-    rdfs:label "Unité d'enseignement" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-fup8:EC a rdfs:Class ;
-    rdfs:label "Élément constitutif" ;
+gi:Reglementations a rdfs:Class ;
+    rdfs:label "Réglementation" ;
     rdfs:domain o:Resource ;
     owl:sameAs schema:Course ;    
     vs:term_status "experimental" .
 
-fup8:Etudiant a rdfs:Class ;
-    rdfs:label "Etudiant" ;
-    rdfs:domain o:Resource ;
-    owl:sameAs foaf:Person ;    
-    vs:term_status "experimental" .
 
-fup8:Seminaire a rdfs:Class ;
-    rdfs:label "Séminaire" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-fup8:EcoleDoctorale a rdfs:Class ;
-    rdfs:label "Ecole Doctorale" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-fup8:Intervention a rdfs:Class ;
-    rdfs:label "Intervention" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-fup8:Laboratoire a rdfs:Class ;
-    rdfs:label "Laboratoire" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
 
 fup8:code a rdf:Property ;
     rdfs:label "Code EC" ;
