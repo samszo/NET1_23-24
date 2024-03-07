@@ -12,7 +12,7 @@
 <https://jardindesconnaissances.univ-paris8.fr/onto/gi> a owl:Ontology ;
     dcterms:title "Governance de l'Internet" .
 
-gi:Net Neutrality a rdfs:Class ;
+gi:NetNeutrality a rdfs:Class ;
     rdfs:label "Net Neutrality" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
