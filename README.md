@@ -32,3 +32,10 @@ par @prefix [le prefix que vous avez défini]: <https://jardindesconnaissances.u
 - choisir le fichier que vous avez télécharger
 - cliquer sur Import
 
+## Exercice 3 : Créer vos ressources template
+cf. https://omeka.org/s/docs/user-manual/content/resource-template/
+
+## Exercice 4 : créer des items sur la base des resources template
+cf. https://omeka.org/s/docs/user-manual/content/items/#add-an-item
+
+
