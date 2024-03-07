@@ -1,7 +1,7 @@
 # NET1_23-24
 Support de cours du Web sémantique et Hypermedia
 
-Exercice 1 : Créer votre propre vocabulaire
+## Exercice 1 : Créer votre propre vocabulaire
 - créer un fichier : vocab.ttl
 - copier les prefix de fup8.ttl
 - coller dans le fichier vocab.ttl
@@ -21,3 +21,14 @@ par @prefix [le prefix que vous avez défini]: <https://jardindesconnaissances.u
     rdfs:label "[le nom de la propriété que vous avez défini]" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
+
+## Exercice 2 : Importer votre vocabulaire
+- se rendre sur la page d'importation du vocabulaire : https://net-24.jardindesconnaissances.fr/admin/vocabulary/import
+- remplir le formulaire :
+    - le nom du vocabulaire : texte libre
+    - le namespace uri
+    - le prefix
+- télécharger le vocabulaire sur ma machine
+- choisir le fichier que vous avez télécharger
+- cliquer sur Import
+
