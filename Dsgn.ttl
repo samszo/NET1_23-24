@@ -12,11 +12,6 @@
 <https://jardindesconnaissances.univ-paris8.fr/onto/Dsgn> a owl:Ontology ;
     dcterms:title "Design interactif" .
 
-Dsgn:Departement a rdfs:Class ;
-    rdfs:label "Département" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
 
 
 dsgn:InteractiveElement a rdfs:Class ;
