@@ -37,5 +37,13 @@ cf. https://omeka.org/s/docs/user-manual/content/resource-template/
 
 ## Exercice 4 : créer des items sur la base des resources template
 cf. https://omeka.org/s/docs/user-manual/content/items/#add-an-item
+- mettre en place des relations entre les items en choisissant comme valeur d'une propriété une ressource omeka
 
+## Exercice 5 : créer une analyse de votre base de connaissances 
+- à la racine de votre github créer un fichier : analyse.md
+- expliquer votre travail concernant :
+ - le vocabulaire
+ - les ressource template
+ - les items
+- illustrer en créant un lien vers la base omeka par exemple : https://net-24.jardindesconnaissances.fr/admin/item/250
 
