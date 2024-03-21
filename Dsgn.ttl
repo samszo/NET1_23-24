@@ -11,145 +11,105 @@
 
 <https://jardindesconnaissances.univ-paris8.fr/onto/Dsgn> a owl:Ontology ;
     dcterms:title "Design interactif" .
-
-
-
 dsgn:InteractiveElement a rdfs:Class ;
     rdfs:label "Element interactif" ;
     rdfs:comment "Représente un élément interactif générique. Inclut des méthodes pour gérer les interactions utilisateur telles que les clics, les survols, etc." ;
     rdfs:subClassOf o:Resource ;
     vs:term_status "experimental" .
-
-
 dsgn:Button a rdfs:Class ;
     rdfs:label "Bouton" ;
     rdfs:comment "Pour les boutons interactifs. Définit des propriétés comme le texte du bouton, les actions associées (comme la navigation vers une autre page), etc." ;
     rdfs:subClassOf dsgn:InteractiveElement ;
     vs:term_status "experimental" .
-
-
 dsgn:InputField a rdfs:Class ;
     rdfs:label "Champ de saisie" ;
     rdfs:comment "Pour les champs de saisie. Inclut des méthodes pour valider les entrées, gérer les événements de saisie, etc." ;
     rdfs:subClassOf dsgn:InteractiveElement ;
     vs:term_status "experimental" .
-
 dsgn:NavigationMenu a rdfs:Class ;
     rdfs:label "Menu de navigation" ;
     rdfs:comment "Pour les menus de navigation. Définit des méthodes pour afficher les options de menu, gérer les sélections, etc." ;
     rdfs:subClassOf dsgn:InteractiveElement ;
     vs:term_status "experimental" .
-
 dsgn:3DObject a rdfs:Class ;
     rdfs:label "Objet 3D" ;
     rdfs:comment "Pour les objets en réalité virtuelle et augmentée. Inclut des propriétés pour la position, l’orientation, la taille, etc." ;
     rdfs:subClassOf o:Resource ;
     vs:term_status "experimental" .
-
-
 dsgn:GestureRecognizer a rdfs:Class ;
     rdfs:label "Reconnaissance de gestes" ;
     rdfs:comment "Pour la reconnaissance de gestes en RA et RV. Définit des méthodes pour détecter des gestes tels que les pincements, les balayages, etc." ;
     rdfs:subClassOf o:Resource ;
     vs:term_status "experimental" .
-
-
 dsgn:UserInterface a rdfs:Class ;
     rdfs:label "Interface utilisateur" ;
     rdfs:comment "Pour représenter l’ensemble de l’interface utilisateur d’une application ou d’un site. Inclut des méthodes pour afficher les éléments interactifs, gérer les événements, etc." ;
     rdfs:subClassOf o:Resource ;
     vs:term_status "experimental" .
-
 dsgn:SemanticModel a rdfs:Class ;
     rdfs:label "Modèle sémantique" ;
     rdfs:comment "Pour la modélisation sémantique des concepts du design interactif. Contient des propriétés ou des méthodes pour représenter des relations entre les éléments, des métadonnées, etc." ;
     rdfs:subClassOf o:Resource ;
     vs:term_status "experimental" .
-
-
 dsgn:AnimationController a rdfs:Class ;
     rdfs:label "Contrôleur d'animation" ;
     rdfs:comment "Pour gérer les animations interactives. Inclut des méthodes pour démarrer, arrêter, mettre en pause, etc., des animations." ;
     rdfs:subClassOf o:Resource ;
     vs:term_status "experimental" .
-
-
 dsgn:FeedbackManager a rdfs:Class ;
     rdfs:label "Gestionnaire de feedback" ;
     rdfs:comment "Pour gérer les retours d’information utilisateur, tels que les vibrations, les sons, etc." ;
     rdfs:subClassOf o:Resource ;
     vs:term_status "experimental" .
-
-
-
 dsgn:InteractiveElement a rdf:Property ;
     rdfs:label "handle_interaction" ;
     rdfs:comment "Une méthode  pour gérer les interactions avec l'élément interactif." ;
     rdfs:domain dsgn:InteractiveElement ;
     vs:term_status "experimental" .
-
-
 dsgn:Button_Text a rdf:Property ;
     rdfs:label "texte_du_bouton" ;
     rdfs:comment "Une propriété pour stocker le texte du bouton." ;
     rdfs:domain dsgn:Button ;
     vs:term_status "experimental" .
-
 dsgn:Button_HandleInteraction a rdf:Property ;
     rdfs:label "handle_interaction" ;
     rdfs:comment "Une méthode pour gérer les actions lorsqu'un bouton est cliqué." ;
     rdfs:domain dsgn:Button ;
     vs:term_status "experimental" .
-
-
 dsgn:InputField_ValidateInput a rdf:Property ;
     rdfs:label "valider_saisie" ;
     rdfs:comment "validation des entrées utilisateur dans le champ de saisie." ;
     rdfs:domain dsgn:InputField ;
     vs:term_status "experimental" .
-
-
 dsgn:NavigationMenu_DisplayOptions a rdf:Property ;
     rdfs:label "affichage des options du menu de navigation." ;
     rdfs:domain dsgn:NavigationMenu ;
     vs:term_status "experimental" .
-
-
 dsgn:ThreeDObject_SetPosition a rdf:Property ;
     rdfs:label "définir_position" ;
     rdfs:comment "pour définir la position d'un objet en réalité virtuelle et augmentée." ;
     rdfs:domain dsgn:ThreeDObject ;
     vs:term_status "experimental" .
-
-
 dsgn:GestureRecognizer_DetectGesture a rdf:Property ;
     rdfs:label "détecter_geste" ;
     rdfs:comment "pour la détection des gestes en réalité virtuelle et augmentée." ;
     rdfs:domain dsgn:GestureRecognizer ;
     vs:term_status "experimental" .
-
-
 dsgn:UserInterface_DisplayElements a rdf:Property ;
     rdfs:label "afficher_elements" ;
     rdfs:comment "pour l'affichage les éléments de l'interface utilisateur." ;
     rdfs:domain dsgn:UserInterface ;
     vs:term_status "experimental" .
-
-
 dsgn:SemanticModel_RepresentConcepts a rdf:Property ;
     rdfs:label "représenter_concepts" ;
     rdfs:comment "pour modéliser sémantiquement les concepts du design interactif." ;
     rdfs:domain dsgn:SemanticModel ;
     vs:term_status "experimental" .
-
-
 dsgn:AnimationController_StartAnimation a rdf:Property ;
     rdfs:label "démarrer_animation" ;
     rdfs:comment "pour démarrer une animation interactive." ;
     rdfs:domain dsgn:AnimationController ;
     vs:term_status "experimental" .
-
-# Propriétés de la classe FeedbackManager
 dsgn:FeedbackManager_ProvideFeedback a rdf:Property ;
     rdfs:label "fournir_feedback" ;
     rdfs:comment "pour gérer les retours d'information utilisateur tels que les vibrations, les sons, etc." ;
