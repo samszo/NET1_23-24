@@ -1,6 +1,8 @@
 # NET1_23-24
 Support de cours du Web sémantique et Hypermedia
 
+Pour vérifier votre travail : https://samszo.github.io/NET1_23-24/travaux.html
+
 ## Exercice 1 : Créer votre propre vocabulaire
 - créer un fichier : vocab.ttl
 - copier les prefix de fup8.ttl
