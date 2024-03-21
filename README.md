@@ -47,3 +47,6 @@ cf. https://omeka.org/s/docs/user-manual/content/items/#add-an-item
  - les items
 - illustrer en créant un lien vers la base omeka par exemple : https://net-24.jardindesconnaissances.fr/admin/item/250
 
+## Exercice 6 : activer les github pages de votre repository
+https://cours-web.ch/git/github-pages.html
+
