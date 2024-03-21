@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travaux des NET1 promotion 23-24</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        h3 {
+            color:red;
+        }
+        h4 {
+            margin-left:30px;
+        }
+        button {
+            margin-left:3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Travaux des NET1 promotion 23-24</h1>
+    <h2>Liste des étudiants</h2>
+    <div id="listeEtudiant"></div>
+    <script>
+        d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQnmVVObTFphGOjYn1GwPr1DUR-CysDH4ngCjdOj-kIdOp3FK7sLQ3Apgx4bOou8mTT8ZSQ5OSg9s_q/pub?gid=1742131196&single=true&output=csv")
+            .then(rs=>{
+                console.log(rs);
+                let lp = d3.select('#listeEtudiant');
+                //récupèrer les groupe et les participants
+                let gp=[], divEtudiants, divParticipants;
+                rs.forEach(r => {
+                    r['urlGitHub']="https://github.com/"+r['Votre login GitHub']+"/NET1_23-24/";
+                    r['urlGitHubPages']="https://"+r['Votre login GitHub']+".github.io/NET1_23-24/";
+                    r['urlVocab']=r['urlGitHub']+'vocab.ttl'
+                    r['urlAnalyse']=r['urlGitHubPages']+'analyse.html'
+                    r['sourceAnalyse']=r['urlGitHubPages']+'analyse.md'
+                });
+                //création des groupes
+                divEtudiants = lp.selectAll('div').data(rs).enter().append('div');
+                divEtudiants.append('a').attr('href',d=>d.urlGitHub).attr('target','_blanck').append('h3').text(d=>d['Votre nom et prénom']+" "+d['Votre n° étudiant']);
+                divEtudiants.append('a').attr('href',d=>d.urlVocab).attr('target','_blanck').append('h4').text(d=>d.urlVocab);
+                divEtudiants.append('iframe').attr('width',"100%").attr('height','300px').attr('src',d=>d['urlAnalyse']);
+            })
+        
+    </script>
+</body>
+</html>
+
